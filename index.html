@@ -2,8 +2,9 @@
 <html lang="it">
 <head>
   <meta charset="utf-8">
-  <title>Francesco Petriglia – Digital Business Card</title>
-  <link rel="stylesheet" href="static/style.css">
+  <title>Francesco Petriglia – Portfolio</title>
+  <!-- <link rel="stylesheet" href="static/style.css"> -->
+  <link rel="stylesheet" href="static/style-labelstudio.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="ls-body">
@@ -15,37 +16,46 @@
       <div class="ls-langbar">
         <label for="lang-select">Language:</label>
         <select id="lang-select" class="ls-select" onchange="switchLang(this.value)">
-          <option value="it">Italiano</option>
+          <option value="it" selected>Italiano</option>
           <option value="en">English</option>
         </select>
       </div>
     </div>
   </header>
 
-  <!-- Layout principale -->
   <div class="layout">
-
     <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="profile">
-        <img src="profile.jpg" alt="Foto profilo" class="profile-pic large">
-        <h1 class="name">Francesco Petriglia</h1>
-        <p class="role">Logopedista | Programmatore | Ricercatore</p>
-        <a class="ls-btn ls-btn--primary-d" href="francesco.vcf" download>📥 Scarica contatto (VCF)</a>
-      </div>
-      <div class="contacts">
-        <p>Email: <a href="mailto:francescopetriglia18@gmail.com">francescopetriglia18@gmail.com</a></p>
-        <p>Pec: <a href="mailto:francescopetriglia@pec.it">francescopetriglia@pec.it</a></p>
-        <p>Tel: <a href="tel:+393519166127">+39 351 916 6127</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/francesco-petriglia/">profilo</a></p>
-      </div>
-    </aside>
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="profile.jpg" alt="Foto profilo" class="profile-pic large">
+      <h1 class="name">Francesco Petriglia</h1>
+      <p class="role">Logopedista - Programmatore - Ricercatore</p>
+      <a class="ls-btn ls-btn--primary-d" href="petriglia-contacts.vcf" download>📥 Scarica contatto (VCF)</a>
+    </div>
+    <div class="contacts">
+      <p>Email: <a href="mailto:francescopetriglia18@gmail.com">francescopetriglia18@gmail.com</a></p>
+      <p>Tel: <a href="tel:+393519166127">+39 351 916 6127</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/francesco-petriglia/">profilo</a></p>
+    </div>
 
-    <!-- Contenuto -->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/francesco-petriglia">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+      </a>
+      <a href="https://www.researchgate.net/profile/Francesco-Petriglia-2">
+        <img src="https://img.shields.io/badge/ResearchGate-00CCBB?style=for-the-badge&logo=ResearchGate&logoColor=white" alt="ResearchGate"/>
+      </a>
+      <a href="https://orcid.org/0000-0002-XXXX-YYYY">
+        <img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID"/>
+      </a>
+    </div>
+  </aside>
+
+    <!-- Contenuto principale -->
     <main class="content">
 
-      <!-- ===== Italiano ===== -->
-      <section id="cv-it">
+      <!-- CV Italiano -->
+      <div id="cv-it">
         <section class="ls-outline fancy-corners">
           <h2 class="ls-outline__title">Presentazione</h2>
           <p>
@@ -59,81 +69,163 @@
         <section>
           <h2>Esperienze lavorative</h2>
           <ul class="ls-metrics--vertical">
+
             <li>
               <details>
-                <summary><strong>Logopedista e titolare</strong> – Centro “Tralerighe” (Roma)</summary>
-                <p>Coordinamento attività cliniche, gestione economica, prime visite di accoglienza.
-                Trattamento di DSA, DPL, Disprassia Verbale, Disturbi dello Spettro Autistico.</p>
+                <summary>
+                  [ <span class="ls-lowhighlight--start">feb2025</span> - <span class="ls-lowhighlight--end">mar2026</span> ] University of Turin (Torino) - <strong>Ricercatore</strong>
+                  <span class="badge research">#ricerca</span><br>
+                </summary>
+                <p>Contratto di ricerca con focus su linguistica computazionale e applicazioni in logopedia.</p>
               </details>
             </li>
+
             <li>
               <details>
-                <summary><strong>Logopedista e responsabile scientifico</strong> – Fondazione Paideia, progetto Talkidz (Torino)</summary>
-                <p>Riabilitazione in età evolutiva; tutoraggio tesi/tirocinanti; sviluppo di Talkidz per
-                l’automatizzazione della valutazione del linguaggio infantile.</p>
+                <summary>
+                  [ <span class="ls-lowhighlight--start">mar2024</span> - <span class="ls-lowhighlight--end">feb2025</span> ] University of Udine (Udine) - <strong>Ricercatore</strong>
+                  <span class="badge research">#ricerca</span><br>
+                </summary>
+                <p>Attività di ricerca sulla valutazione multilivello del discorso narrativo e applicazioni NLP per analisi trascrizioni.</p>
               </details>
             </li>
+
             <li>
               <details>
-                <summary><strong>Logopedista</strong> – ALM Associazione Laziale Motulesi (Roma)</summary>
-                <p>Riabilitazione in età evolutiva e adulta (afasia, disartria, disfagia, neurodegenerativi).
-                Lavoro in équipe multidisciplinare.</p>
+                <summary>
+                  [ <span class="ls-lowhighlight--start">set2020</span> - presente ] Fondazione Paideia (Torino) - <strong>Logopedista & responsabile scientifico</strong>
+                  <span class="badge research">#ricerca</span>
+                  <span class="badge clinical">#clinica</span><br>
+                </summary>
+                <p>Riabilitazione logopedica in età evolutiva. Tutoraggio tesi e tirocinanti. Sviluppo software Talkidz per automatizzare la valutazione del linguaggio infantile.</p>
               </details>
             </li>
+
+            <li>
+              <details>
+                <summary>
+                  [ <span class="ls-lowhighlight--start">set2020</span> - presente ] Centro “Tralerighe” (Roma) - <strong>Logopedista & titolare</strong>
+                  <span class="badge clinical">#clinica</span><br>
+                </summary>
+                <p>Coordinamento attività cliniche, gestione economica, prime visite e riabilitazione DSA, DPL, Disprassia Verbale, Disturbi dello Spettro Autistico.</p>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary>
+                  [ <span class="ls-lowhighlight--start">set2016</span> - <span class="ls-lowhighlight--end">lug2018</span> ] Centro “Tralerighe” (Roma) - <strong>Logopedista & titolare</strong>
+                  <span class="badge clinical">#clinica</span><br>
+                </summary>
+                <p>Coordinamento attività cliniche, gestione economica, prime visite e riabilitazione DSA, DPL, Disprassia Verbale, Disturbi dello Spettro Autistico.</p>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary>
+                  [ <span class="ls-lowhighlight--start">giu2015</span> - <span class="ls-lowhighlight--end">lug2018</span> ] ALM Associazione Laziale Motulesi (Roma) - <strong>Logopedista</strong>
+                  <span class="badge clinical">#clinica</span><br>
+                </summary>
+                <p>Riabilitazione in età evolutiva e adulta (afasia, disartria, disfagia, malattie neurodegenerative). Collaborazione con equipe multidisciplinari.</p>
+              </details>
+            </li>
+
           </ul>
         </section>
-
         <section class="ls-outline ls-outline--alt fancy-corners">
           <h2 class="ls-outline__title">Progetti di ricerca</h2>
           <div class="project">
             <h3>Talkidz – Childhood Language Assessment</h3>
-            <p>Software per la valutazione automatizzata del linguaggio infantile basato su NLP e linguistica computazionale.
-            Analizza campioni narrativi e produce indici micro- e macrolinguistici.</p>
+            <p>Software per la valutazione automatizzata del linguaggio infantile basato su NLP e linguistica computazionale.</p>
           </div>
           <div class="project">
             <h3>Sugar, Salt & Pepper – Robotics for Autism</h3>
-            <p>Contributo a progetti di robotica sociale per favorire l’interazione comunicativa nei bambini con DSA.</p>
+            <p>Progetti di robotica sociale (Pepper) per supportare l’interazione comunicativa in bambini con ASD.</p>
           </div>
         </section>
 
-        <section>
-          <h2>Skills</h2>
-          <h3>Languages</h3>
+        <section class="ls-card pubs-card">
+          <div class="ls-tabs">
+            <input class="ls-tab-radio" type="radio" id="tab-pub" name="pubs" checked>
+            <input class="ls-tab-radio" type="radio" id="tab-thesis" name="pubs">
+            <!-- <input class="ls-tab-radio" type="radio" id="tab-others" name="pubs"> -->
+            
+            <div class="ls-pillset">
+              <label class="ls-pill" for="tab-pub">Publications</label>
+              <label class="ls-pill" for="tab-thesis">Theses</label>
+              <!-- <label class="ls-pill" for="tab-others">Others</label> -->
+            </div>
+
+            <div class="ls-tab-panels">
+              <!-- Publications -->
+              <div class="ls-tab-panel" data-for="tab-pub">
+                <ul class="pub-list">
+                  <li>
+                    <strong>Unveiling the dynamics of discourse production in healthy aging and its connection to cognitive skills.</strong>
+                    <em>Discourse Processes</em>, 2025. 
+                    <a href="https://doi.org/10.1080/0163853X.2025.2507548">DOI: 10.1080/0163853X.2025.2507548</a>
+                  </li>
+                  <li>
+                    <strong>L’integrazione della linguistica computazionale nella pratica logopedica: tecnologie emergenti nella valutazione dei disturbi del linguaggio.</strong>
+                    <em>Manuale di logopedia in età evolutiva</em>. 3, 2024. ISBN: 978-88-590-3616-6
+                  </li>
+                  <li>
+                    <strong>Ontologies and Open Data for Enriching Personalized Social Moments in Human Robot Interaction</strong>
+                    <em>Adjunct Proceedings of the 30th ACM Conference on User Modeling, Adaptation and Personalization</em>, 2022. 
+                    <a href="https://doi.org/10.1145/3511047.3537690">DOI: 10.1145/3511047.3537690</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Theses -->
+              <div class="ls-tab-panel" data-for="tab-thesis">
+                <ul class="pub-list">
+                  <li><strong>Talkidz – Software for Infant Language Evaluation. Morphosyntactic Data of a Normative Sample.</strong> University of Turin, BA Thesis</li>
+                  <li><strong>Talkidz – Software for Infant Language Evaluation. Phonetic-Phonological Data of a Normative Sample.</strong> University of Turin, BA Thesis</li>
+                  <li><strong>The Role of Praxic Abilities in Semantic-Lexical Processing: An Experimental Study.</strong> University of Turin, BA Thesis</li>
+                  <li><strong>Development of Quantitative Techniques and Signal and Image Analysis in Speech Therapy.</strong> Polytechnic University of Turin, MA Project</li>
+                </ul>
+              </div>
+
+              <!-- Others
+              <div class="ls-tab-panel" data-for="tab-others">
+                <ul class="pub-list">
+                  <li><strong>Implementation of a Software for Language Analysis in Python.</strong>University of Turin, Computer Science BA Project</li>
+                </ul>
+              </div> -->
+            </div>
+</section>
+      </div>
+
+      <!-- CV English -->
+      <div id="cv-en" hidden>
+        <section class="ls-outline fancy-corners">
+          <h2 class="ls-outline__title">About Me 🔬</h2>
           <p>
-            <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
-            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-            <img src="https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white" alt="R" />
-            <img src="https://img.shields.io/badge/Visual%20Basic-512BD4.svg?style=for-the-badge&logo=visual-basic&logoColor=white" alt="Visual Basic" />
-            <img src="https://img.shields.io/badge/MATLAB-R2023a-BLUE.svg?style=for-the-badge&logo=mathworks&logoColor=white" alt="MATLAB" />
-          </p>
-          <h3>Technologies</h3>
-          <p>
-            <img src="https://img.shields.io/badge/NLP-c90000?style=for-the-badge" alt="NLP" />
-            <img src="https://img.shields.io/badge/ML-e6c700?style=for-the-badge" alt="ML" />
-            <img src="https://img.shields.io/badge/Data%20Analysis-0a84ff?style=for-the-badge" alt="Data Analysis" />
-            <img src="https://img.shields.io/badge/Statistics-027015?style=for-the-badge" alt="Statistics" />
-          </p>
-          <h3>Tools</h3>
-          <p>
-            <img src="https://img.shields.io/badge/PsychoPy-59207C?style=for-the-badge&logo=psychopy&logoColor=white" alt="PsychoPy" />
-            <img src="https://img.shields.io/badge/SPSS-0a84ff?style=for-the-badge&logo=ibm&logoColor=white" alt="SPSS" />
-            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-            <img src="https://img.shields.io/badge/Jupyter%20Notebooks-0a84ff?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
-            <img src="https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252" alt="Colab" />
-            <img src="https://img.shields.io/badge/JASP-027015?style=for-the-badge" alt="JASP" />
+            Master's in Psychological Sciences and a Bachelor's in Speech Therapy.
+            Experience in neuropsychological rehabilitation and speech therapy across lifespan.
+            Research and development as scientific lead of the <em>Talkidz</em> project,
+            focusing on computational linguistics, NLP, and Machine Learning.
           </p>
         </section>
-      </section>
 
-      <!-- ===== English ===== -->
-      <section id="cv-en" hidden>
-        <section class="ls-outline fancy-corners">
-          <h2 class="ls-outline__title">Overview</h2>
-          <p>
-            Bachelor’s in Speech Therapy and MSc in Mind & Body Sciences.
-            Clinical experience in speech and neuropsychological rehabilitation for children and adults.
-            Scientific lead of <em>Talkidz</em>, focusing on computational linguistics, NLP and Machine Learning.
-          </p>
+        <section>
+          <h2>Social</h2>
+<div class="social-links">
+  <a href="https://www.linkedin.com/in/francesco-petriglia">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://twitter.com/f_petriglia">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"/>
+  </a>
+  <a href="https://www.researchgate.net/profile/Francesco-Petriglia-2">
+    <img src="https://img.shields.io/badge/ResearchGate-00CCBB?style=for-the-badge&logo=ResearchGate&logoColor=white" alt="ResearchGate"/>
+  </a>
+  <a href="https://orcid.org/0000-0002-XXXX-YYYY">
+    <img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID"/>
+  </a>
+</div>
         </section>
 
         <section>
@@ -141,20 +233,22 @@
           <ul class="ls-metrics--vertical">
             <li>
               <details>
-                <summary><strong>Speech Therapist & Owner</strong> – “Tralerighe” Center (Rome)</summary>
-                <p>Clinical coordination, practice management, first assessments. Treatment of DLD, CAS, ASD and related disorders.</p>
+                <summary><strong>Logopedista e titolare</strong> – Centro “Tralerighe” (Roma)</summary>
+                <p>Coordinamento attività cliniche, gestione economica del centro, prime visite di accoglienza.
+                Trattamento riabilitativo di DSA, DPL, Disprassia Verbale, Disturbi dello Spettro Autistico.</p>
               </details>
             </li>
             <li>
               <details>
-                <summary><strong>Speech Therapist & Scientific Lead</strong> – Paideia Foundation, Talkidz project (Turin)</summary>
-                <p>Pediatric rehabilitation; supervision of theses/interns; development of Talkidz for automated child language assessment.</p>
+                <summary><strong>Logopedista e responsabile scientifico</strong> – Fondazione Paideia, progetto Talkidz (Torino)</summary>
+                <p>Riabilitazione logopedica in età evolutiva. Tutoraggio tesi e tirocinanti. Sviluppo software Talkidz.</p>
               </details>
             </li>
             <li>
               <details>
-                <summary><strong>Speech Therapist</strong> – ALM (Rome)</summary>
-                <p>Child and adult rehabilitation (aphasia, dysarthria, dysphagia, neurodegenerative diseases) within a multidisciplinary team.</p>
+                <summary><strong>Logopedista</strong> – ALM Associazione Laziale Motulesi (Roma)</summary>
+                <p>Riabilitazione in età evolutiva e adulta (afasia, disartria, disfagia, malattie neurodegenerative).
+                Collaborazione con equipe multidisciplinari.</p>
               </details>
             </li>
           </ul>
@@ -164,42 +258,18 @@
           <h2 class="ls-outline__title">Research Projects</h2>
           <div class="project">
             <h3>Talkidz – Childhood Language Assessment</h3>
-            <p>NLP-based software for automated assessment of children’s narrative speech with micro- and macro-linguistic indices.</p>
+            <p>Software for automated child language assessment using NLP and computational linguistics.</p>
           </div>
           <div class="project">
             <h3>Sugar, Salt & Pepper – Robotics for Autism</h3>
-            <p>Social robotics initiatives to support communication in children on the autism spectrum.</p>
+            <p>Research on humanoid robotics (Pepper) to support social communication in children with ASD.</p>
           </div>
         </section>
 
         <section>
-          <h2>Skills</h2>
-          <h3>Languages</h3>
-          <p>
-            <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
-            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-            <img src="https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white" alt="R" />
-            <img src="https://img.shields.io/badge/Visual%20Basic-512BD4.svg?style=for-the-badge&logo=visual-basic&logoColor=white" alt="Visual Basic" />
-            <img src="https://img.shields.io/badge/MATLAB-R2023a-BLUE.svg?style=for-the-badge&logo=mathworks&logoColor=white" alt="MATLAB" />
-          </p>
-          <h3>Technologies</h3>
-          <p>
-            <img src="https://img.shields.io/badge/NLP-c90000?style=for-the-badge" alt="NLP" />
-            <img src="https://img.shields.io/badge/ML-e6c700?style=for-the-badge" alt="ML" />
-            <img src="https://img.shields.io/badge/Data%20Analysis-0a84ff?style=for-the-badge" alt="Data Analysis" />
-            <img src="https://img.shields.io/badge/Statistics-027015?style=for-the-badge" alt="Statistics" />
-          </p>
-          <h3>Tools</h3>
-          <p>
-            <img src="https://img.shields.io/badge/PsychoPy-59207C?style=for-the-badge&logo=psychopy&logoColor=white" alt="PsychoPy" />
-            <img src="https://img.shields.io/badge/SPSS-0a84ff?style=for-the-badge&logo=ibm&logoColor=white" alt="SPSS" />
-            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-            <img src="https://img.shields.io/badge/Jupyter%20Notebooks-0a84ff?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
-            <img src="https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252" alt="Colab" />
-            <img src="https://img.shields.io/badge/JASP-027015?style=for-the-badge" alt="JASP" />
-          </p>
-        </section>
-      </section>
+          <h2>Publications & Theses Tutoring</h2>
+
+      </div>
 
     </main>
   </div>
@@ -215,11 +285,10 @@
       var en = document.getElementById('cv-en');
       if(it && en){ it.hidden = (lang!=='it'); en.hidden = (lang!=='en'); }
 
-      // sidebar labels
       var role = document.querySelector('.role');
       if(role){ role.textContent = (lang==='it')
-        ? 'Logopedista | Programmatore | Ricercatore'
-        : 'Speech Therapist | Programmer | Researcher'; }
+        ? 'Logopedista - Programmatore - Ricercatore'
+        : 'Speech Therapist - Programmer - Researcher'; }
       var btn = document.querySelector('.ls-btn[download]');
       if(btn){ btn.textContent = (lang==='it')
         ? '📥 Scarica contatto (VCF)'

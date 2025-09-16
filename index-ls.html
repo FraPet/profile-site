@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Francesco Petriglia – CV & Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="static/style-labelstudio.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="mainHeader">
+    <div class="Header">
+      <!-- <a href="#" class="HeaderLogo">
+        <span class="LabelStudioLogoText">Francesco Petriglia</span>
+      </a> -->
+      <ul class="HeaderNav">
+        <li><a href="#about" class="Active">Chi sono</a></li>
+        <li><a href="#experience">Esperienza</a></li>
+        <li><a href="#projects">Progetti</a></li>
+        <li><a href="#publications">Pubblicazioni</a></li>
+      </ul>
+      <div class="ls-langbar">
+        <label for="lang-select">Lang:</label>
+        <select id="lang-select" class="ls-select" onchange="switchLang(this.value)">
+          <option value="it">IT</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Layout -->
+  <main class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="profile.jpg" alt="Foto profilo" class="profile-pic">
+      <h1 class="name">Francesco Petriglia</h1>
+      <p class="role">Logopedista | Programmatore | Ricercatore</p>
+
+      <a href="francesco.vcf" class="ls-btn ls-btn--primary" download>📥 Scarica contatto</a>
+
+      <div class="contacts">
+        <p>Email: <a href="mailto:francescopetriglia18@gmail.com">francescopetriglia18@gmail.com</a></p>
+        <p>Pec: <a href="mailto:francescopetriglia@pec.it">francescopetriglia@pec.it</a></p>
+        <p>Tel: <a href="tel:+393519166127">+39 351 916 6127</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/francesco-petriglia/">profilo</a></p>
+        <p>ORCID: <a href="https://orcid.org/0000-0003-0459-8225">0000-0003-0459-8225</a></p>
+      </div>
+    </aside>
+
+    <!-- Content -->
+    <section class="content">
+<!-- Hero Section -->
+
+<!-- About -->
+<!-- About evidenziato -->
+<div id="about" class="WordHighlight">
+  <h1>Presentazione</h1>
+  <p>
+    Laurea in Logopedia e Laurea Magistrale in Scienze del Corpo e della Mente.  
+    Esperienza in riabilitazione logopedica e neuropsicologica in età evolutiva e adulta.  
+    Attività di ricerca come responsabile scientifico del progetto <em>Talkidz</em>,  
+    con focus su NLP e  Machine Learning.
+  </p>
+</div>
+
+
+
+      <!-- Esperienza -->
+      <div id="experience" class="ls-outline ls-outline--alt">
+        <h2>Esperienze lavorative</h2>
+        <ul class="ls-metrics--vertical">
+          <li>
+            <details>
+              <summary>[ <span class="ls-lowhighlight--start">mar2025</span> - <span class="ls-lowhighlight--end">feb2026</span> ] – University of Turin
+                <strong>Ricercatore</strong> <span class="badge research">#ricerca</span>
+              </summary>
+              <p>Contratto di ricerca con focus su linguistica computazionale e applicazioni in logopedia.</p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>[ <span class="ls-lowhighlight--start">mar2024</span> - <span class="ls-lowhighlight--end">feb2025</span> ] – University of Udine
+                <strong>Ricercatore</strong> <span class="badge research">#ricerca</span>
+              </summary>
+              <p>Valutazione multilivello del discorso narrativo e applicazioni NLP per trascrizioni cliniche.</p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>[ <span class="ls-lowhighlight--start">set2020</span> - presente ] – Fondazione Paideia
+                <strong>Logopedista e responsabile scientifico</strong>
+                <span class="badge research">#ricerca</span> <span class="badge clinical">#clinica</span>
+              </summary>
+              <p>Riabilitazione logopedica, tutoraggio tesi, sviluppo del software <em>Talkidz</em>.</p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>[ <span class="ls-lowhighlight--start">set2020</span> - presente ] – Centro “Tralerighe”
+                <strong>Logopedista e titolare</strong> <span class="badge clinical">#clinica</span>
+              </summary>
+              <p>Gestione del centro e trattamento di DSA, DPL, Disprassia Verbale, Disturbi dello Spettro Autistico.</p>
+            </details>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Progetti -->
+      <div id="projects" class="ls-outline">
+        <h2>Progetti</h2>
+        <div class="project">
+          <h3>Talkidz – Childhood Language Assessment</h3>
+          <p>Software NLP per analisi linguistica automatizzata dei campioni narrativi infantili.</p>
+        </div>
+        <div class="project">
+          <h3>Sugar, Salt & Pepper – Robotics for Autism</h3>
+          <p>Uso di robotica sociale per supportare la comunicazione in bambini con Disturbo dello Spettro Autistico.</p>
+        </div>
+      </div>
+
+        <section class="ls-card pubs-card">
+          <div class="ls-tabs">
+            <input class="ls-tab-radio" type="radio" id="tab-pub" name="pubs" checked>
+            <input class="ls-tab-radio" type="radio" id="tab-thesis" name="pubs">
+            <!-- <input class="ls-tab-radio" type="radio" id="tab-others" name="pubs"> -->
+            
+            <div class="ls-pillset">
+              <label class="ls-pill" for="tab-pub">Publications</label>
+              <label class="ls-pill" for="tab-thesis">Theses</label>
+              <!-- <label class="ls-pill" for="tab-others">Others</label> -->
+            </div>
+
+            <div class="ls-tab-panels">
+              <!-- Publications -->
+              <div class="ls-tab-panel" data-for="tab-pub">
+                <ul class="pub-list">
+                  <li>
+                    <strong>Unveiling the dynamics of discourse production in healthy aging and its connection to cognitive skills.</strong>
+                    <em>Discourse Processes</em>, 2025. 
+                    <a href="https://doi.org/10.1080/0163853X.2025.2507548">DOI: 10.1080/0163853X.2025.2507548</a>
+                  </li>
+                  <li>
+                    <strong>L’integrazione della linguistica computazionale nella pratica logopedica: tecnologie emergenti nella valutazione dei disturbi del linguaggio.</strong>
+                    <em>Manuale di logopedia in età evolutiva</em>. 3, 2024. ISBN: 978-88-590-3616-6
+                  </li>
+                  <li>
+                    <strong>Ontologies and Open Data for Enriching Personalized Social Moments in Human Robot Interaction</strong>
+                    <em>Adjunct Proceedings of the 30th ACM Conference on User Modeling, Adaptation and Personalization</em>, 2022. 
+                    <a href="https://doi.org/10.1145/3511047.3537690">DOI: 10.1145/3511047.3537690</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Theses -->
+              <div class="ls-tab-panel" data-for="tab-thesis">
+                <ul class="pub-list">
+                  <li><strong>Talkidz – Software for Infant Language Evaluation. Morphosyntactic Data of a Normative Sample.</strong> University of Turin, BA Thesis</li>
+                  <li><strong>Talkidz – Software for Infant Language Evaluation. Phonetic-Phonological Data of a Normative Sample.</strong> University of Turin, BA Thesis</li>
+                  <li><strong>The Role of Praxic Abilities in Semantic-Lexical Processing: An Experimental Study.</strong> University of Turin, BA Thesis</li>
+                  <li><strong>Development of Quantitative Techniques and Signal and Image Analysis in Speech Therapy.</strong> Polytechnic University of Turin, MA Project</li>
+                </ul>
+              </div>
+
+              <!-- Others
+              <div class="ls-tab-panel" data-for="tab-others">
+                <ul class="pub-list">
+                  <li><strong>Implementation of a Software for Language Analysis in Python.</strong>University of Turin, Computer Science BA Project</li>
+                </ul>
+              </div> -->
+            </div>
+</section>
+  </main>
+
+  <footer class="ls-footer">
+    <span>© 2025 Francesco Petriglia</span>
+  </footer>
+
+  <script>
+    function switchLang(lang){
+      document.documentElement.lang = lang;
+      var role = document.querySelector('.role');
+      if(role){
+        role.textContent = (lang==='it')
+          ? 'Logopedista | Programmatore | Ricercatore'
+          : 'Speech Therapist | Programmer | Researcher';
+      }
+    }
+  </script>
+</body>
+</html>
