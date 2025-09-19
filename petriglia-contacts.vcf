@@ -2,12 +2,11 @@ BEGIN:VCARD
 VERSION:3.0
 N:Petriglia;Francesco;;;
 FN:Francesco Petriglia
-TITLE:Logopedista | LM in Psicologia
-ORG:Centro Tralerighe / Fondazione Paideia
-TEL;TYPE=CELL:+39 3519166127
-EMAIL;TYPE=INTERNET:francescopetriglia18@gmail.com
-EMAIL;TYPE=INTERNET;TYPE=WORK:francescopetriglia@pec.it
-ADR;TYPE=HOME:;;10153 Torino;Torino;Piemonte;Italia
+TITLE:SLP | Researcher | Programmer
+ORG:University of Turin | Fondazione Paideia
+TEL;TYPE=CELL:+393519166127
+EMAIL;TYPE=WORK:francesco.petriglia@unito.it
+EMAIL;TYPE=WORK:francesco.petriglia@centropaideia.org
 URL:https://www.linkedin.com/in/francesco-petriglia/
-REV:20250116T120000Z
+REV:20250919T120000Z
 END:VCARD

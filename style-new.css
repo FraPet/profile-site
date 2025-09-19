@@ -1,0 +1,620 @@
+/* Variabili colore */
+:root {
+  --color-ink: #333333;
+  --color-bg: #ffffff;
+  --accent-orange: #ff6b4a;
+  --color-persimmon-000: #fff1ec;
+  --color-persimmon-000: #fff1ec;
+  --bg-purple: #ffb4f4;
+  --accent-purple: #640055;
+  --accent-green: #00a808;
+}
+
+/* Reset base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+}
+
+.experience-sublist {
+  margin: 0.2em 0 0.2em 1.2em;
+  padding: 0;
+  list-style-type: circle;
+}
+
+.experience-sublist li {
+  margin: 0;
+  padding: 0;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between; /* social a sx, lingue a dx */
+  align-items: center;
+  padding: 0.5em 1em;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.social-badges {
+  flex: 1;                        /* occupa spazio disponibile */
+  display: flex;
+  justify-content: center;        /* centra i badge */
+  gap: 0.5em;                     /* spazio uniforme */
+}
+
+.social-badges a {
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.social-badges img {
+  height: 32px;
+  border-radius: 6px;
+}
+
+.lang-switch button {
+  background: none;
+  border: 2px solid var(--accent-orange);
+  border-radius: 4px;
+  padding: 0.3em 0.8em;
+  margin-left: 0.5em;
+  font-family: 'Figtree', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent-orange);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lang-switch button:hover,
+.lang-switch button.active {
+  background-color: var(--accent-orange);
+  color: #fff;
+}
+
+/* Layout principale */
+.layout {
+  display: flex;
+  max-width: 1600px;
+  margin: 2em auto;
+  gap: 2em;
+}
+
+/* Sidebar 1/4 */
+.sidebar {
+  flex: 1.2;                     /* più spazio rispetto a prima */
+  min-width: 320px;              /* larghezza minima garantita */
+  max-width: 400px;              /* limite superiore */
+  background-color: var(--bg-purple);
+  padding: 2em;                  /* più respiro */
+  text-align: center;
+  color: #000;
+  position: sticky;
+  overflow-y: auto;          
+  top: 150px;   
+  align-self: flex-start;
+}
+
+.sidebar .profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar .name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0.5em 0;
+  color: var(--accent-purple);
+}
+
+.sidebar .role {
+  /* font-size: 14px; */
+  font-weight: 400;
+  color: #363636;
+  margin-bottom: 1em;
+  white-space: nowrap;   /* evita a capo */
+}
+
+.sidebar .contacts {
+  margin-top: 1em;
+  text-align: left;
+  /* font-size: 14px; */
+  line-height: 1.6;
+  padding-right: 1em;   /* aggiunge spazio a destra */
+}
+
+.sidebar .contacts p {
+  margin: 0.4em 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;           /* spazio tra icona e testo */
+}
+
+
+.contacts i {
+  margin-right: 0.6em;
+  color: var(--accent-purple); /* riprende il tuo colore tema */
+}
+.contacts p {
+  margin: 0.4em 0;
+  display: flex;
+  align-items: center;
+}
+.contacts a {
+  color: inherit;
+  text-decoration: none;
+}
+.contacts a:hover {
+  text-decoration: underline;
+}
+
+.sidebar .ls-btn {
+  display: block;
+  width: 100%;          /* bottone largo quanto la sidebar */
+  text-align: center;
+  margin-top: 1.5em;    /* lo porta in fondo dopo i contatti */
+}
+.sidebar .contacts a {
+  color: var(--accent-purple);
+  text-decoration: none;
+}
+
+.sidebar .contacts a:hover {
+  text-decoration: underline;
+}
+
+/* Bottone stile custom */
+.ls-btn {
+  background-color: var(--color-sand-900);
+  padding: .95em 2em;
+  text-decoration: none;
+  /* border: 1px solid var(--color-sand-900); */
+  display: inline-flex;
+  align-items: center;
+  /* border-radius: 6px; */
+  /* font-size: 14px; */
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color .2s, border-color .2s;
+}
+.ls-btn--primary {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.ls-btn--primary:hover {
+  opacity: 0.9;
+}
+
+/* Contenuto principale 3/4 */
+.content {
+  flex: 3;
+}
+
+.edu-card {
+  background-color: #f9f9f9;       /* grigio chiarissimo per il riquadro */
+  border-left: 8px solid var(--accent-green);  /* bordo verde scuro */
+  color: #ffffff;                     /* testo principale più leggibile */
+  padding: 1.5em;
+  /* border-radius: 6px; */
+}
+
+/* Publications card */
+.pubs-card {
+  border-left: 8px solid var(--accent-purple); /* bordo viola */
+  background-color: #fafafa;                   /* grigio chiaro */
+  color: var(--color-ink);
+}
+
+.pubs-card h2 {
+  color: var(--accent-purple);
+}
+
+.edu-card p {
+  color: #ffffff !important;   /* testo scuro e leggibile */
+  line-height: 1.5;         /* spaziatura per leggibilità */
+  margin: 0.5em 0;
+}
+
+.edu-card h2 {
+  color: var(--accent-green);
+  padding-bottom: 3px;                  /* titolo verde scuro */
+}
+
+.edu-card details summary {
+  color: #ffffff;                     /* testo del summary neutro */
+}
+
+.edu-card details summary strong {
+  color: var(--accent-green);                  /* titolo del titolo di studio in arancione */
+}
+
+
+.WordHighlight {
+  background-color: var(--color-persimmon-000);
+  border: 2px solid var(--accent-orange);
+  border-radius: 4px;
+  padding: 2em;
+  position: relative;
+  display: block;
+  line-height: 1.6;
+  font-weight: 400;
+  margin: 2em auto;
+  max-width: 800px;   /* per non allargare troppo il testo */
+}
+
+.WordHighlight h1 {
+  color: var(--accent-orange);
+  margin-bottom: 0.75em;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.WordHighlight p {
+  color: var(--color-ink);
+  margin: 0.75em 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Angoli decorativi */
+.WordHighlight::before,
+.WordHighlight::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: var(--accent-orange);
+  position: absolute;
+}
+
+.WordHighlight::before {
+  bottom: -8px;
+  left: -8px;
+}
+
+.WordHighlight::after {
+  top: -8px;
+  right: -8px;
+}
+
+/* Sezione Esperienza */
+.ls-outline {
+  border: 2px solid var(--accent-orange);
+  border-radius: 6px;
+  padding: 1.5em;
+  margin: 2em 0;
+  background-color: #fff;
+}
+
+.ls-cornerbox {
+  position: relative;
+  padding: 1.5em;
+  margin: 2em 0;
+  background-color: #fff;
+}
+
+
+/* angoli */
+.ls-cornerbox::before,
+.ls-cornerbox::after {
+  content: "";
+  position: absolute;
+  width: 20px;   /* lunghezza lato */
+  height: 20px;  /* lunghezza lato */
+  border: 2px solid var(--accent-purple);
+}
+
+/* angolo in alto a sinistra */
+.ls-cornerbox::before {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+/* angolo in basso a destra */
+.ls-cornerbox::after {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+/* aggiungiamo altri due angoli */
+.ls-cornerbox .corner-topright,
+.ls-cornerbox .corner-bottomleft {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--accent-purple);
+}
+
+.ls-cornerbox .corner-topright {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.ls-cornerbox .corner-bottomleft {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+
+.ls-outline--alt {
+  border-color: var(--accent-purple);
+}
+
+.ls-outline h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 1em;
+  color: var(--accent-purple);
+}
+
+.ls-metrics--vertical {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ls-metrics--vertical li {
+  margin-bottom: 1em;
+}
+
+/* Dettagli esperienze */
+details summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--color-ink);
+}
+
+details summary strong {
+  margin-left: 0.3em;
+  color: var(--accent-orange);
+}
+
+details p {
+  margin-top: 0.5em;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-ink);
+}
+
+/* Evidenziazione date */
+/* .ls-lowhighlight--start,
+.ls-lowhighlight--end {
+  color: var(--accent-orange);
+  font-weight: 600;
+} */
+
+/* ===== Inline low highlight (marker effect) ===== */
+.ls-lowhighlight{
+  background: linear-gradient(to top, rgba(197,50,237,.35) 40%, transparent 40%);
+  color: var(--ink); font-weight:600;
+}
+.ls-lowhighlight--alt{
+  background: linear-gradient(to top, rgba(0,150,136,.35) 40%, transparent 40%);
+}
+.ls-lowhighlight--neutral{
+  background: linear-gradient(to top, rgba(154,160,166,.35) 40%, transparent 40%);
+}
+.ls-lowhighlight--start{
+  background: linear-gradient(to top, rgba(127, 255, 95, 0.35) 40%, transparent 40%);
+}
+.ls-lowhighlight--end{
+  background: linear-gradient(to top, rgba(255, 54, 54, 0.35) 40%, transparent 40%);
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  margin-left: 0.4em;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.badge.research {
+  background-color: var(--accent-purple);
+}
+
+.badge.clinical {
+  background-color: var(--accent-orange);
+}
+
+/* Variante cornerbox per progetti */
+.projects {
+  --projects-color: #009688; /* verde acqua */
+}
+
+.projects a{
+  color: #009688;
+}
+
+.projects h2 {
+  color: var(--projects-color);
+}
+
+/* angoli verdi */
+.projects::before,
+.projects::after,
+.projects .corner-topright,
+.projects .corner-bottomleft {
+  border-color: var(--projects-color);
+}
+
+/* Card nera */
+.ls-card {
+  background-color: #000;
+  color: #fff;
+  padding: 1.5em;
+  border-left: 8px solid var(--accent-green);  /* bordo verde scuro */
+  margin: 2em 0;
+}
+
+/* Specifica per Education */
+#education.ls-card {
+  background-color: #000;
+  color: #fff;
+  border-left: 8px solid var(--accent-green);
+}
+
+/* Specifica per Publications */
+#publications.ls-card {
+  background-color: #000000;
+  color: var(--color-bg);
+  border-left: 8px solid var(--accent-purple);
+}
+
+/* Tabs container */
+.ls-tabs {
+  position: relative;
+}
+
+/* Nascondi radio */
+.ls-tab-radio {
+  display: none;
+}
+
+/* Pills */
+.ls-pillset {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.ls-pill {
+  background-color: #333;
+  color: #fff;
+  padding: 0.4em 1em;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.ls-pill:hover {
+  background-color: #555;
+}
+
+/* Stato attivo in base al radio selezionato */
+#tab-pub:checked ~ .ls-pillset label[for="tab-pub"],
+#tab-thesis:checked ~ .ls-pillset label[for="tab-thesis"] {
+  background-color: var(--accent-purple);
+}
+
+/* Panels */
+.ls-tab-panels .ls-tab-panel {
+  display: none;
+}
+
+#tab-pub:checked ~ .ls-tab-panels .ls-tab-panel[data-for="tab-pub"],
+#tab-thesis:checked ~ .ls-tab-panels .ls-tab-panel[data-for="tab-thesis"] {
+  display: block;
+}
+
+/* Lista pubblicazioni */
+.pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pub-list li {
+  margin-bottom: 1em;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.pub-list strong {
+  display: inline;
+  margin-bottom: 0.2em;
+  font-weight: 600;
+}
+
+.pub-list em {
+  font-style: italic;
+  margin-right: 0.3em;
+}
+
+.pub-list a {
+  display: inline-block;
+  background-color: var(--accent-purple);
+  color: #fff;
+  padding: 0.2em 0.6em;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.pub-list a:hover {
+  background-color: #a05ee6; /* viola più chiaro */
+}
+
+.tech-footer {
+  margin-top: 3em;
+  background-color: #fff;
+}
+
+.tech-footer h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--accent-purple);
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.tech-table-wrapper {
+  overflow-x: auto; /* per mobile */
+}
+
+.tech-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.tech-table th {
+  text-align: center;
+  padding: 0.8em;
+  font-size: 16px;
+  color: #555;
+  border-bottom: 2px solid #555;
+}
+
+.tech-table td {
+  text-align: center;
+  padding: 1em;
+  vertical-align: middle;
+}
+
+.tech-table img {
+  margin: 0.3em;
+}

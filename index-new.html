@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Portfolio</title>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-new.css">
+</head>
+<body>
+      <!-- Navbar con social e lingua -->
+  <header class="topbar">
+    <div class="social-badges">
+      <a href="https://www.linkedin.com/in/francesco-petriglia" rel="nofollow">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+      </a>
+      <!-- <a href="https://twitter.com/f_petriglia">
+        <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
+      </a> -->
+      <a href="https://www.researchgate.net/profile/Francesco-Petriglia-2">
+        <img src="https://img.shields.io/badge/ResearchGate-00CCBB?style=for-the-badge&logo=ResearchGate&logoColor=white" alt="ResearchGate">
+      </a>
+      <a href="https://orcid.org/0000-0003-0459-8225">
+        <img src="https://img.shields.io/badge/orcid-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID">
+      </a>
+    </div>
+
+    <div class="lang-switch">
+      <button onclick="setLang('it')">IT</button>
+      <button onclick="setLang('en')">EN</button>
+    </div>
+  </header>
+
+  <!-- Qui andranno le sezioni -->
+    <main class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+    <h1 class="name">Francesco Petriglia</h1>
+    <p class="role lang-section" data-lang="it">Logopedista | Programmatore | Ricercatore</p>
+    <p class="role lang-section" data-lang="en">Speech Therapist | Programmer | Researcher</p>
+
+    <!-- Contatti -->
+    <!-- <div class="contacts">
+        <p class="lang-section" data-lang="it">Telefono: <a href="tel:+393519166127">+39 351 916 6127</a></p>
+        <p class="lang-section" data-lang="en">Phone: <a href="tel:+393519166127">+39 351 916 6127</a></p>
+
+        <p>Email: <a href="mailto:francesco.petriglia@unito.it">francesco.petriglia@unito.it</a></p>
+        <p>Email: <a href="mailto:francesco.petriglia@centropaideia.org">francesco.petriglia@centropaideia.org</a></p>
+    </div> -->
+
+    <div class="contacts">
+  <p>
+    <i class="fa-solid fa-phone"></i>
+    <a href="tel:+393519166127">+39 351 916 6127</a>
+  </p>
+  <p>
+    <i class="fa-solid fa-envelope"></i>
+    <a href="mailto:francesco.petriglia@unito.it">@unito.it</a>
+  </p>
+  <p>
+    <i class="fa-solid fa-envelope"></i>
+    <a href="mailto:francesco.petriglia@centropaideia.org">@centropaideia.org</a>
+  </p>
+</div>
+
+    <!-- Bottone -->
+    <a href="petriglia-contacts-cv.zip" class="ls-btn ls-btn--primary lang-section" data-lang="it" download>
+        Scarica contatti e CV
+    </a>
+    <a href="petriglia-contacts-cv.zip" class="ls-btn ls-btn--primary lang-section" data-lang="en" download>
+        Download contacts and CV
+    </a>
+    </aside>
+
+  <!-- Contenuto principale -->
+  <section class="content">
+    <section id="about" class="WordHighlight">
+    <h1 class="lang-section" data-lang="it">Presentazione</h1>
+    <h1 class="lang-section" data-lang="en">About</h1>
+
+    <p class="lang-section" data-lang="it">
+        Laurea magistrale in <span class="ls-lowhighlight">Scienze psicologiche</span> (UniTo) e triennale in 
+        <span class="ls-lowhighlight--alt">Logopedia</span> (Tor Vergata). Esperienza in 
+        <span class="ls-lowhighlight--neutral">riabilitazione neuropsicologica</span>, 
+        <span class="ls-lowhighlight--neutral">logopedia</span> e applicazioni cliniche dei 
+        <span class="ls-lowhighlight">metodi computazionali</span>.  
+        Attualmente assegnista di ricerca a UniTo (PRIN 2022 SMOOTH, ACTively) con focus su 
+        <span class="ls-lowhighlight">NLP</span> e automatizzazione delle pipeline di trascrizione e analisi del discorso.
+    </p>
+
+    <p class="lang-section" data-lang="en">
+        Master’s in <span class="ls-lowhighlight">Psychological Sciences</span> (UniTo) and Bachelor’s in 
+        <span class="ls-lowhighlight--alt">Speech Therapy</span> (Tor Vergata). Background in 
+        <span class="ls-lowhighlight--neutral">neuropsychological rehabilitation</span>, 
+        <span class="ls-lowhighlight--neutral">speech therapy</span>, and clinical applications of 
+        <span class="ls-lowhighlight">computational methods</span>.  
+        Currently research fellow at UniTo (PRIN 2022 SMOOTH, ACTively), focusing on 
+        <span class="ls-lowhighlight">NLP</span> and automation of transcription pipelines and discourse analysis.
+    </p>
+    </section>
+
+    <section id="education" class="ls-card edu-card">
+  <h2>Titoli di studio / Education</h2>
+  <ul class="ls-metrics--vertical">
+
+    <li>
+      <details>
+        <summary>[ 2018 – 2020 ] – Università degli Studi di Torino
+          <strong>Laurea Magistrale in Scienze del Corpo e della Mente</strong>
+        </summary>
+        <p class="lang-section" data-lang="it">
+          Laurea magistrale LM-51 con votazione 110/110 e lode.  
+          Percorso interdipartimentale mirato a integrare conoscenze psicologiche e mediche, 
+          con particolare attenzione a neuroscienze cognitive e sociali, disturbi mentali 
+          (organici, degenerativi, clinici e psichiatrici).  
+          Tesi: «Embodiment, tool-use ed expertise: un'ipotesi sperimentale nel caso dello sport del tennis».
+        </p>
+        <p class="lang-section" data-lang="en">
+          Master’s Degree (LM-51) with honors (110/110 cum laude).  
+          Interdepartmental program integrating psychology and medical sciences, 
+          with a focus on cognitive and social neuroscience, and on mental disorders 
+          (organic, degenerative, clinical, psychiatric).  
+          Thesis: “Embodiment, tool-use and expertise: an experimental hypothesis in the case of tennis sport.”
+        </p>
+      </details>
+    </li>
+
+    <li>
+      <details>
+        <summary>[ 2011 – 2014 ] – Università di Roma “Tor Vergata”
+          <strong>Laurea in Logopedia</strong>
+        </summary>
+        <p class="lang-section" data-lang="it">
+          Laurea triennale L/SNT2 con votazione 110/110 e lode.  
+          Formazione centrata su valutazione e riabilitazione di disturbi della voce, parola, linguaggio orale e scritto, 
+          e degli handicap comunicativi in età evolutiva, adulta e geriatrica.  
+          Tesi: «Il questionario al care-giver come misura di outcome nella riabilitazione del paziente afasico».
+        </p>
+        <p class="lang-section" data-lang="en">
+          Bachelor’s Degree in Speech Therapy (L/SNT2), graduated with honors (110/110 cum laude).  
+          Training focused on the assessment and rehabilitation of disorders of voice, speech, oral and written language, 
+          and communication impairments in childhood, adulthood, and geriatrics.  
+          Thesis: “The caregiver questionnaire as an outcome measure in aphasia rehabilitation.”
+        </p>
+      </details>
+    </li>
+
+    <!-- <li>
+      <details>
+        <summary>[ <span class="ls-lowhighlight--start">2016</span> – <span class="ls-lowhighlight--end">2018</span> ] – Università di Roma “La Sapienza”
+          <strong>Corso di Laurea in Psicologia e Salute (non completato)</strong>
+        </summary>
+        <p class="lang-section" data-lang="it">
+          Frequenza sospesa dopo il raggiungimento dei crediti necessari per l’accesso diretto alla Laurea Magistrale.  
+          Approfondimenti in ambito psicologico e neuroscientifico.
+        </p>
+        <p class="lang-section" data-lang="en">
+          Enrollment suspended after obtaining the credits required for direct admission to the Master’s Degree.  
+          Courses attended in psychology and neuroscience.
+        </p>
+      </details>
+    </li>
+
+    <li>
+      <details>
+        <summary>[ <span class="ls-lowhighlight--start">2014</span> – <span class="ls-lowhighlight--end">2016</span> ] – Università di Roma “Tor Vergata” / ENS
+          <strong>Corso LIS I e II livello</strong>
+        </summary>
+        <p class="lang-section" data-lang="it">
+          Formazione in Lingua dei Segni Italiana (LIS) – teoria (30 ore), pratica (120 ore), tirocinio (20 ore).  
+          Competenze di base in comunicazione con persone sorde e ipoacusiche.
+        </p>
+        <p class="lang-section" data-lang="en">
+          Italian Sign Language (LIS) training – theory (30 hours), practice (120 hours), internship (20 hours).  
+          Acquired basic communication skills with deaf and hard-of-hearing individuals.
+        </p>
+      </details>
+    </li> -->
+
+  </ul>
+</section>
+
+
+    <!-- Esperienza -->
+    <section id="experience" class="ls-cornerbox">
+    <span class="corner-topright"></span>
+    <span class="corner-bottomleft"></span>
+    <h2 class="lang-section" data-lang="it">Esperienze lavorative</h2>
+    <h2 class="lang-section" data-lang="en">Work Experience</h2>
+    <ul class="ls-metrics--vertical">
+        <li>
+        <details>
+            <summary>[ <span class="ls-lowhighlight--start">mar2025</span> - present ] – University of Turin
+            <strong>Ricercatore</strong> <span class="badge research">#research</span>
+            </summary>
+
+            <!-- Italiano -->
+            <p class="lang-section" data-lang="it">
+            Assegno di ricerca annuale (da marzo 2025) presso l’Università di Torino, 
+            nell’ambito del progetto PRIN 2022 <em>“ACTIVe communication: Assessment and enhancement of pragmatic and narrative skills in hEaLthY aging (ACTIVELY)”</em> 
+            (Prot. n. 2022CZF8KA, CUP G53D23003110006). 
+            Attività incentrata sulla valutazione e sul potenziamento delle abilità pragmatiche e narrative nell’invecchiamento sano. 
+            Progetto finanziato dal Ministero dell’Università e della Ricerca (Avviso pubblico n. 104 del 02/02/2022), 
+            con fondi dell’Unione Europea – NextGenerationEU.
+            </p>
+
+            <!-- English -->
+            <p class="lang-section" data-lang="en">
+            One-year research fellowship (from March 2025) at the University of Turin, 
+            within the PRIN 2022 project <em>“ACTIVe communication: Assessment and enhancement of pragmatic and narrative skills in hEaLthY aging (ACTIVELY)”</em> 
+            (Prot. n. 2022CZF8KA, CUP G53D23003110006). 
+            Work focused on the assessment and enhancement of pragmatic and narrative skills in healthy aging. 
+            Project funded by the Italian Ministry of University and Research (Public Notice No. 104 of 02/02/2022), 
+            with support from the European Union – NextGenerationEU.
+            </p>
+
+        </details>
+        </li>
+          <li>
+            <details>
+              <summary>[ <span class="ls-lowhighlight--start">sep2020</span> - present ] – Fondazione Paideia | Centro Paideia
+                <strong>Logopedista e Ricercatore</strong>
+                <span class="badge research">#research</span> <span class="badge clinical">#slp</span>
+              </summary>
+                <p class="lang-section" data-lang="it">
+                Attività clinica di riabilitazione logopedica in età evolutiva, con particolare attenzione a bambini e adolescenti con disturbi del neurosviluppo. 
+                Interventi rivolti a Disturbi dello Spettro Autistico (ASD), Disprassia Verbale, Disturbi Primari del Linguaggio (DPL) e Disturbi Specifici dell’Apprendimento (DSA), 
+                utilizzando metodologie evidence-based e programmi personalizzati.  
+                Responsabilità nell’elaborazione di piani terapeutici individualizzati, nel monitoraggio dei progressi e nel coordinamento con famiglie, insegnanti e altri professionisti.  
+                Attività di tutoraggio accademico per studenti universitari e supervisioni di tesi di laurea.  
+                Partecipazione a progetti di ricerca applicata e responsabile scientifico del software <em>Talkidz</em>, dedicato alla valutazione automatizzata del linguaggio infantile tramite NLP e linguistica computazionale.
+                </p>
+
+                <p class="lang-section" data-lang="en">
+                Clinical activity in speech and language therapy for children and adolescents, with a particular focus on neurodevelopmental disorders.  
+                Intervention programs addressed Autism Spectrum Disorders (ASD), Childhood Apraxia of Speech, Specific Language Impairments (SLI), and Specific Learning Disorders (SLD), 
+                applying evidence-based methodologies and individualized treatment plans.  
+                Responsibilities included the design of personalized therapeutic pathways, progress monitoring, and interdisciplinary collaboration with families, teachers, and healthcare professionals.  
+                Academic tutoring for university students and supervision of bachelor’s and master’s theses.  
+                Involvement in applied research projects and lead scientist of the <em>Talkidz</em> software, aimed at the automated evaluation of child language through NLP and computational linguistics.
+                </p>
+            </details>
+          </li>
+            <li>
+            <details>
+                <summary>[ <span class="ls-lowhighlight--start">mar2024</span> - <span class="ls-lowhighlight--end">feb2025</span> ] – University of Udine
+                <strong>Ricercatore</strong> <span class="badge research">#research</span>
+                </summary>
+
+                <!-- Italiano -->
+                <p class="lang-section" data-lang="it">
+                Assegno di ricerca annuale (marzo 2024 – febbraio 2025) presso l’Università di Udine, 
+                nell’ambito del progetto PRIN 2022 PNRR <em>“Standardization of the Multilevel prOcedure for discOurse analysis 
+                and Training program for narrative production in Healthy adults – SMOOTH”</em> (Prot. n. P2022M9JCM, CUP G53D23007250001). 
+                Attività focalizzata sulla valutazione multilivello del discorso narrativo e sull’applicazione di tecniche NLP 
+                alle trascrizioni cliniche. Progetto finanziato dal Ministero dell’Università e della Ricerca (Avviso pubblico 
+                n. 1409 del 14/09/2022), con fondi dell’Unione Europea – NextGenerationEU.
+                </p>
+
+                <!-- English -->
+                <p class="lang-section" data-lang="en">
+                One-year research fellowship (March 2024 – February 2025) at the University of Udine, 
+                within the PRIN 2022 PNRR project <em>“Standardization of the Multilevel prOcedure for discOurse analysis 
+                and Training program for narrative production in Healthy adults – SMOOTH”</em> (Prot. n. P2022M9JCM, CUP G53D23007250001). 
+                Work focused on multilevel assessment of narrative discourse and the application of NLP techniques to clinical transcripts. 
+                Project funded by the Italian Ministry of University and Research (Public Notice No. 1409 of 14/09/2022), with support from 
+                the European Union – NextGenerationEU.
+                </p>
+
+            </details>
+            </li>
+          <li>
+            <details>
+              <summary>[ <span class="ls-lowhighlight--start">feb2018</span> - <span class="ls-lowhighlight--end">sep2020</span> ] – Centro "Plòion"
+                <strong>Logopedista e titolare</strong> <span class="badge clinical">#slp</span>
+              </summary>
+                <p class="lang-section" data-lang="it">
+                Fondatore e co-responsabile del Centro Plòion, con duplice ruolo clinico e gestionale.  
+                Attività clinica rivolta alla diagnosi e al trattamento di Disturbi Specifici dell’Apprendimento (DSA), Disturbi Primari del Linguaggio (DPL), Disprassia Verbale e Disturbi dello Spettro Autistico (ASD).  
+                Implementazione di protocolli riabilitativi basati su approcci evidence-based e adattati ai bisogni individuali, con utilizzo di strumenti standardizzati e tecniche di valutazione multilivello.  
+                Coordinamento di équipe multidisciplinari (logopedisti, psicologi, neuropsichiatri, TNPEE) e supporto alla collaborazione con scuole e famiglie per garantire continuità educativa e terapeutica.  
+                In ambito gestionale, responsabilità nell’organizzazione delle attività cliniche, supervisione del personale, pianificazione strategica dei servizi, gestione amministrativa e promozione di iniziative di sensibilizzazione territoriale sui disturbi del linguaggio e dell’apprendimento.
+                </p>
+
+                <p class="lang-section" data-lang="en">
+                Founder and co-director of the “Plòion” Center, with combined clinical and gestional responsibilities.  
+                Clinical practice focused on the assessment and treatment of Specific Learning Disorders (SLD), Primary Language Disorders (PLD), Childhood Apraxia of Speech, and Autism Spectrum Disorders (ASD).  
+                Application of evidence-based rehabilitation protocols tailored to individual needs, with the use of standardized tools and multilayered evaluation techniques.  
+                Coordination of multidisciplinary teams (speech therapists, psychologists, child neuropsychiatrists) and facilitation of collaboration with schools and families to ensure educational and therapeutic continuity.  
+                On the managerial side, responsibilities included the organization of clinical activities, staff supervision, strategic planning of services, administrative management, and the promotion of awareness initiatives at the community level regarding language and learning disorders.
+                </p>
+            </details>
+            </li>
+
+          <li>
+            <details>
+              <summary>[ <span class="ls-lowhighlight--start">aug2015</span> - <span class="ls-lowhighlight--end">jul2018</span> ] – Centro "Tralerighe"
+                <strong>Logopedista e titolare</strong> <span class="badge clinical">#slp</span>
+              </summary>
+                <p class="lang-section" data-lang="it">
+                Fondatore e co-responsabile del Centro "Tralerighe" (responsabile Sabbadini L.), con duplice ruolo clinico e gestionale.  
+                Attività clinica rivolta alla diagnosi e al trattamento di Disturbi Specifici dell’Apprendimento (DSA), Disturbi Primari del Linguaggio (DPL), Disprassia Verbale e Disturbi dello Spettro Autistico (ASD).  
+                Implementazione di protocolli riabilitativi basati su approcci evidence-based e adattati ai bisogni individuali, con utilizzo di strumenti standardizzati e tecniche di valutazione multilivello.  
+                Coordinamento di équipe multidisciplinari (logopedisti, psicologi, neuropsichiatri, TNPEE) e supporto alla collaborazione con scuole e famiglie per garantire continuità educativa e terapeutica.  
+                In ambito gestionale, responsabilità nell’organizzazione delle attività cliniche, supervisione del personale, pianificazione strategica dei servizi, gestione amministrativa e promozione di iniziative di sensibilizzazione territoriale sui disturbi del linguaggio e dell’apprendimento.
+                </p>
+
+                <p class="lang-section" data-lang="en">
+                Founder and co-director of the "Tralerighe" Center, with combined clinical and gestional responsibilities.  
+                Clinical practice focused on the assessment and treatment of Specific Learning Disorders (SLD), Primary Language Disorders (PLD), Childhood Apraxia of Speech, and Autism Spectrum Disorders (ASD).  
+                Application of evidence-based rehabilitation protocols tailored to individual needs, with the use of standardized tools and multilayered evaluation techniques.  
+                Coordination of multidisciplinary teams (speech therapists, psychologists, child neuropsychiatrists) and facilitation of collaboration with schools and families to ensure educational and therapeutic continuity.  
+                On the managerial side, responsibilities included the organization of clinical activities, staff supervision, strategic planning of services, administrative management, and the promotion of awareness initiatives at the community level regarding language and learning disorders.
+                </p>
+            </details>
+            </li>
+        </ul>
+</section>
+<section id="projects" class="ls-cornerbox projects">
+  <span class="corner-topright"></span>
+  <span class="corner-bottomleft"></span>
+
+  <h2 class="lang-section" data-lang="it">Progetti di Ricerca</h2>
+  <h2 class="lang-section" data-lang="en">Research Projects</h2>
+
+  <ul>
+    <li>
+    <strong class="lang-section" data-lang="it">Talkidz – Software per la valutazione del linguaggio</strong>
+    <strong class="lang-section" data-lang="en">Talkidz – Software for Language Assessment</strong>
+    <p class="lang-section" data-lang="it">
+        <a href="https://talkidz.it" target="_blank">Talkidz</a> è uno strumento innovativo per la valutazione automatizzata del linguaggio espressivo in età evolutiva, 
+        basato su NLP e ML. Analizza indici fondamentali come accuratezza fonetico-fonologica, complessità morfosintattica e diversità lessicale.  
+        Un elemento distintivo è l’impiego di trascrizioni IPA, che consente una valutazione dettagliata degli aspetti fonetico-fonologici.  
+        Il sistema integra <em>Broca</em>, un modello di trascrizione che converte il testo italiano in IPA mantenendo gli errori e applicando strategie di rephrasing controllato.  
+        Pensato per ricercatori, clinici ed educatori, Talkidz facilita l’individuazione precoce dei disturbi del linguaggio e il supporto agli interventi mirati.
+    </p>
+    <p class="lang-section" data-lang="en">
+        <a href="https://talkidz.it" target="_blank">Talkidz</a> is an innovative tool for the automated assessment of children's expressive language, 
+        integrating NLP and ML. It analyzes key indices such as phonetic-phonological accuracy, morphosyntactic complexity, and lexical diversity.  
+        A distinctive feature is the use of IPA transcriptions, enabling precise phonetic-phonological evaluation.  
+        The system includes <em>Broca</em>, a transcription model that converts Italian text into IPA while preserving errors and applying controlled rephrasing.  
+        Designed for researchers, clinicians, and educators, Talkidz supports early identification and intervention in language disorders.
+    </p>
+    </li>
+
+    <li>
+    <strong class="lang-section" data-lang="it">Sugar, Salt & Pepper – Robotica per l’autismo</strong>
+    <p class="lang-section" data-lang="it">
+        Progetto di robotica sociale basato sull’impiego del robot umanoide Pepper per supportare 
+        l’interazione comunicativa e sociale in bambini con Disturbi dello Spettro Autistico (ASD).  
+        L’obiettivo è favorire lo sviluppo di abilità pragmatiche e relazionali attraverso attività 
+        strutturate, sfruttando le potenzialità motivazionali e interattive della robotica.
+    </p>
+
+    <strong class="lang-section" data-lang="en">Sugar, Salt & Pepper – Robotics for Autism</strong>
+    <p class="lang-section" data-lang="en">
+        A social robotics project using the humanoid robot Pepper to support communicative and social 
+        interaction in children with Autism Spectrum Disorders (ASD).  
+        The aim is to foster the development of pragmatic and relational skills through structured activities, 
+        leveraging the motivational and interactive potential of robotics.
+    </p>
+    </li>
+
+    <li>
+    <strong class="lang-section" data-lang="it">
+        SMOOTH – Standardizzazione della procedura multilivello di analisi del discorso
+    </strong>
+    <p class="lang-section" data-lang="it">
+        Progetto PRIN 2022 volto a sviluppare una procedura standardizzata per l’analisi multilivello 
+        del discorso narrativo, indagando il rapporto tra linguaggio e abilità cognitive (memoria, 
+        attenzione, Theory of Mind) nell’arco di vita, con particolare attenzione all’invecchiamento sano.  
+        <em>Ruolo:</em> implementazione di strumenti NLP per automatizzare trascrizioni e analisi linguistiche.
+    </p>
+
+    <strong class="lang-section" data-lang="en">
+        SMOOTH – Standardization of the Multilevel Procedure for Discourse Analysis
+    </strong>
+    <p class="lang-section" data-lang="en">
+        PRIN 2022 project aimed at developing a standardized multilevel procedure for narrative discourse 
+        analysis, exploring the relationship between language and cognitive skills (memory, attention, 
+        Theory of Mind) across the lifespan, with focus on healthy aging.  
+        <em>Role:</em> implementation of NLP tools for automated transcription and linguistic analysis.
+    </p>
+    </li>
+
+    <li>
+    <strong class="lang-section" data-lang="it">
+        ACTively – Comunicazione attiva: abilità pragmatiche e narrative
+    </strong>
+    <p class="lang-section" data-lang="it">
+        Progetto PRIN 2022 dedicato alla valutazione e al potenziamento delle competenze pragmatiche 
+        e narrative, in adulti normotipici e popolazioni cliniche (es. bambini sordi).  
+        <em>Ruolo:</em> sviluppo di pipeline NLP per l’analisi automatizzata delle trascrizioni e degli indici narrativi.
+    </p>
+
+    <strong class="lang-section" data-lang="en">
+        ACTively – Active Communication: Pragmatic and Narrative Skills
+    </strong>
+    <p class="lang-section" data-lang="en">
+        PRIN 2022 project focused on assessing and enhancing pragmatic and narrative abilities 
+        in healthy adults and clinical populations (e.g., deaf children).  
+        <em>Role:</em> development of NLP pipelines for automated transcription and narrative index analysis.
+    </p>
+    </li>
+  </ul>
+</section>
+        <section id="publications" class="ls-card">
+        <div class="ls-tabs">
+            <!-- Radio -->
+            <input class="ls-tab-radio" type="radio" id="tab-pub" name="pubs" checked>
+            <input class="ls-tab-radio" type="radio" id="tab-thesis" name="pubs">
+            
+            <!-- Pills -->
+            <div class="ls-pillset">
+            <label class="ls-pill" for="tab-pub">Publications</label>
+            <label class="ls-pill" for="tab-thesis">Theses</label>
+            </div>
+
+            <!-- Panels -->
+            <div class="ls-tab-panels">
+            <!-- Publications -->
+            <div class="ls-tab-panel" data-for="tab-pub">
+                <ul class="pub-list">
+                <li>
+                    <strong>Unveiling the dynamics of discourse production in healthy aging and its connection to cognitive skills.</strong> (Marini, A., Petriglia, F., D’Ortenzio, S., Bosco, F. M., & Gasparotto, G.; 2025)
+                    <em>Discourse Processes</em> 62(6–7), 479–501. 
+                    <a href="https://doi.org/10.1080/0163853X.2025.2507548">DOI: 10.1080/0163853X.2025.2507548</a>
+                </li>
+                <li>
+                    <strong>L’integrazione della linguistica computazionale nella pratica logopedica: tecnologie emergenti nella valutazione dei disturbi del linguaggio.</strong> (Petriglia F.; 2024)
+                    <em>Manuale di logopedia in età evolutiva</em>. 3. <a href="https://www.erickson.it/it/manuale-di-logopedia-in-eta-evolutiva-volume-3">ISBN: 978-88-590-3616-6</a>
+                </li>
+                <li>
+                    <strong>Ontologies and Open Data for Enriching Personalized Social Moments in Human Robot Interaction</strong> (Gena C., Damiano R., Mattutino C., Mazzei A., Brighenti S., Nazzario M., Meirone A., Quarato C., Miraglio E., Ricciardiello G., Petriglia F., Liscio F., Piccinni G., Mazzotta L., Pecone C., and Ricci V.; 2022)
+                    <em>Adjunct Proceedings of the 30th ACM Conference on User Modeling, Adaptation and Personalization (UMAP '22 Adjunct). Association for Computing Machinery, New York, NY, USA,</em> 151–154. 
+                    <a href="https://doi.org/10.1145/3511047.3537690">DOI: 10.1145/3511047.3537690</a>
+                </li>
+                </ul>
+            </div>
+
+            <!-- Theses -->
+            <div class="ls-tab-panel" data-for="tab-thesis">
+                <ul class="pub-list">
+                <li><strong>Talkidz – Software for Infant Language Evaluation. Morphosyntactic Data of a Normative Sample.</strong> University of Turin, BA Thesis</li>
+                <li><strong>Talkidz – Software for Infant Language Evaluation. Phonetic-Phonological Data of a Normative Sample.</strong> University of Turin, BA Thesis</li>
+                <li><strong>The Role of Praxic Abilities in Semantic-Lexical Processing: An Experimental Study.</strong> University of Turin, BA Thesis</li>
+                <li><strong>Development of Quantitative Techniques and Signal and Image Analysis in Speech Therapy.</strong> Polytechnic University of Turin, MA Project</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <footer class="tech-footer">
+        <!-- <h2>Skills & Tools</h2> -->
+        <div class="tech-table-wrapper">
+            <table class="tech-table">
+            <div class="tech-table-wrapper">
+                <table class="tech-table">
+                <tr>
+                    <th>Languages</th>
+                    <th>Tools</th>
+                    <th>Skills</th>
+                </tr>
+                <tr>
+                    <td>
+                    <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
+                    <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+                    <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" />
+                    <img src="https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white" alt="R" />
+                    <img src="https://img.shields.io/badge/Visual%20Basic-512BD4.svg?style=for-the-badge&logo=Visual-Basic&logoColor=white" alt="Visual Basic" />
+                    <img src="https://img.shields.io/badge/MATLAB-R2023a-BLUE.svg?style=for-the-badge&logo=mathworks&logoColor=white" alt="MATLAB" />
+                    </td>
+                    <td>
+                    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+                    <img src="https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252" alt="Colab" />
+                    <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
+                    <img src="https://img.shields.io/badge/JASP-027015?style=for-the-badge&color=8bc43d" alt="JASP" />
+                    <img src="https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white" alt="ChatGPT" />
+                    <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
+                    <img src="https://img.shields.io/badge/PsychoPy-59207C?style=for-the-badge&logo=psychopy&logoColor=white" alt="PsychoPy" />
+                    </td>
+                    <td>
+                    <img src="https://img.shields.io/badge/NLP-c90000?style=for-the-badge" alt="NLP" />
+                    <img src="https://img.shields.io/badge/AI-e6c700?style=for-the-badge" alt="AI" />
+                    <img src="https://img.shields.io/badge/Data%20Analysis-0a84ff?style=for-the-badge" alt="Data Analysis" />
+                    <img src="https://img.shields.io/badge/Statistics-027015?style=for-the-badge" alt="Statistics" />
+                    <img src="https://img.shields.io/badge/Speech%20Processing-1F618D?style=for-the-badge" alt="Speech Processing" />
+                    <img src="https://img.shields.io/badge/Neurorehabilitation-B03A2E?style=for-the-badge" alt="Neurorehabilitation" />
+                    </td>
+
+                </tr>
+                </table>
+            </div>
+            </footer>
+
+
+
+  </main>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.lang-section').forEach(el => {
+      if (el.dataset.lang === lang) {
+        el.style.display = 'block';
+      } else {
+        el.style.display = 'none';
+      }
+    });
+
+    // Aggiorna stato dei bottoni
+    document.querySelectorAll('.lang-switch button').forEach(btn => {
+      if (btn.textContent === lang.toUpperCase()) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+  }
+
+  // Default: italiano
+  setLang('it');
+</script>
+
+</body>
+</html>
